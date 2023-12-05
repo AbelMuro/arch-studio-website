@@ -24,7 +24,18 @@ function Header() {
     }, [imageNum])
 
     useEffect(() => {
-        const allButtons = document.querySelectorAll('.header_carousel button');
+        const allButtons = document.querySelectorAll('button[data-id]');
+        allButtons.forEach((button) => {
+            button.style.backgroundColor = '';
+            button.style.color = '';
+        });
+
+        allButtons.forEach((button) => {
+            if(button.getAttribute('data-id') == imageNum){
+                button.style.backgroundColor = 'black';
+                button.style.color = 'white';
+            }
+        })
     }, [imageNum])
 
     return(
