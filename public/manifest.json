@@ -1,0 +1,22 @@
+{
+    "short_name": "Quiz App",
+    "name": "Front end Quiz App",
+    "icons": [
+      {
+        "src": "/public/favicon-32x32.png",                    
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
+      },
+       {
+        "src": "/public/favicon-32x32.png",                  
+        "type": "image/png",
+        "sizes": "196x196",
+        "purpose": "any maskable"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
