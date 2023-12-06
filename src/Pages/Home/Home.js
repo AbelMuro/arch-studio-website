@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 import Header from './Header';
+import Introduction from './Introduction';
 
 function Home() {
     return(
@@ -10,6 +11,7 @@ function Home() {
                 HOME
             </div>
             <Header/>
+            <Introduction/>
         </main>
     )
 }

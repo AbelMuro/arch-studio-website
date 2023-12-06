@@ -1,19 +1,27 @@
 .header{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    width: 1110px;
     height: 720px;
-    display: flex;
-    align-items: center;
-    padding-left: 190px;
     position: relative;
+    margin-bottom: 195px;
 }
 
 .header_content{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
-    width: 445px;
+    justify-content: center;
+    padding-left: 190px;
+    transition: width 0.2s linear;
+    position: absolute;
+}
+
+.header_text{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .header_content h1 {
@@ -24,17 +32,18 @@
     font-weight: 700;
     line-height: 80px; /* 83.333% */
     letter-spacing: -2px;
-    margin-bottom: 10px;
+    margin: 0px 0px 10px 0px;
 }
 
 .header_content p{
+    width: 445px;
     color: #FFF;
     font-family: var(--font);
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 133.333% */
-    margin-bottom: 41px;
+    margin: 0px 0px 41px 0px;
 }
 
 .header_content button {
@@ -57,6 +66,10 @@
     padding: 0px;
 }
 
+.header_content button:hover{
+    background-color: #60636D;
+}
+
 .arrow{
     width: 24px;
     height: 18px;
@@ -65,9 +78,10 @@
 .header_carousel{
     display: flex;
     position: absolute;
-    bottom: 0px;
+    bottom: -16px;
     left: -120px;
     list-style-type: none;
+    z-index: var(--far);
 }
 
 .header_carousel button{
@@ -86,4 +100,52 @@
     font-weight: 700;
     line-height: 25px; /* 138.889% */
     cursor: pointer;
+}
+
+.header_carousel button:hover{
+    background-color: #EEEFF4;;
+}
+
+@media(max-width: 1200px){
+    .header_content{
+        padding: 0px;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1000px){
+    .header_text{
+        width: 80%;    
+    }
+
+    .header_text h1, .header_text p{
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+    .header{
+        margin-bottom: 248px;
+    }
+}
+
+@media(max-width: 600px){
+    .header{
+        margin-bottom: 141px;
+    }
+
+    .header_carousel{
+        display: none;
+    }
+
+    .header_content h1 {
+        font-size: 3rem;
+        letter-spacing: -1.2px;
+        line-height: 48px;
+        margin-bottom: 11px;
+    }
+
+    .header_content p {
+        margin-bottom: 83px;
+    }
 }

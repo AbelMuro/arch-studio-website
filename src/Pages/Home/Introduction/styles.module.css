@@ -1,0 +1,131 @@
+.container{
+    display: flex;
+    justify-content: end;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 445px 350px;
+    column-gap: 125px;
+    row-gap: 43px;
+    position: relative;
+    transition: width 0.2s linear;
+}
+
+.intro_title{
+    margin: 0px;
+    position: absolute;
+    top: -90px;
+    left: -190px;
+    color: #EEEFF4;
+    font-family: var(--font);
+    font-size: 15.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200px; /* 80% */
+    letter-spacing: -5px;
+}
+
+.intro h2{
+    color: #1B1D23;
+    font-family: var(--font);
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 88.889% */
+    letter-spacing: -2px;
+    margin: 74px 0px 0px 0px;
+}
+
+.intro p{
+    margin: 0px;
+    color: #60636D;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+}
+
+.intro img {
+    width: 350px;
+    height: 568px;
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+
+.intro hr{
+    margin: 0px;
+    width: 65px;
+    height: 1px;
+    border: none;
+    background-color: #C8CCD8;
+    position: absolute;
+    top: -68px;
+}
+
+@media(max-width: 1240px){
+    .intro{
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+}
+
+@media(max-width: 1160px){
+    .intro{
+        grid-template-columns: 1fr 350px;
+    }
+}
+
+@media(max-width: 1050px){
+    .intro h2{
+        font-size: 3.125rem;
+        line-height: 50px;
+    }
+
+    .intro_title{
+        font-size: 120px;
+        letter-spacing: -3px;
+        line-height: 200px;
+        left: -40px;
+        top: -60px;
+    }
+}
+
+@media(max-width: 950px){
+    .intro{
+        grid-template-columns: auto;
+    }
+
+    .intro img {
+        display: none;
+    }
+
+    .intro h2{
+        margin: 0px;
+        width: 445px;
+        font-size: 4.5rem;
+        line-height: 64px;
+    }
+
+    .intro_title{
+        top: -150px;
+        left: 0px;
+    }
+}
+
+@media(max-width: 600px){
+    .intro{
+        width: 90%;
+        margin: auto;
+        row-gap: 22px;
+    }
+
+    .intro h2{
+        width: 300px;
+        font-size: 3rem;
+        line-height: 52px;
+    }
+}
+

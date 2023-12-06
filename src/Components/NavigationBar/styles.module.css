@@ -45,19 +45,23 @@
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .nav_logo{
         margin-right: 17.84px;
     }
-}
 
-@media(max-width: 690px){
     .nav_links{
-        gap: 10px;
-        justify-content: space-between;
-        width: 100%;
+        justify-content: space-between;        
     }
+
     .nav_logo{
         margin: 0px;
+    }   
+}
+
+@media(max-width: 680px){
+    .nav_links{
+        width: 100%;
+        gap: 10px;
     }
 }

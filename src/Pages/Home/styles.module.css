@@ -27,6 +27,13 @@
     background-color:rgb(200, 204, 216);
 }
 
+@media(max-width: 1440px){
+    .home{
+        width: 100%;
+    }
+}
+
+
 @media(max-width: 800px){
     .home_label{
         left: 38px;

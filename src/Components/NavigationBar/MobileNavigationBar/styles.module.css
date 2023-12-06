@@ -15,9 +15,15 @@
     cursor: pointer;
 }
 
-.nav_menu {
+.nav_menu{
     width: 24px;
     height: 17px;
+    cursor: pointer;
+}
+
+.nav_close{
+    width: 20px;
+    height: 21px;
     cursor: pointer;
 }
 
@@ -41,6 +47,7 @@
     display: flex;
     position: absolute;
     top: 96px;
+    right: 0px;
     z-index: var(--closest);
     padding-left: 48px; 
     align-items: center;

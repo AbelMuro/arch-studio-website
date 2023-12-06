@@ -40,8 +40,11 @@ function MobileNavigationBar() {
     return(
         <>
             <nav className={styles.nav}>
-                <img className={styles.nav_logo} src={common['logo']}/>
-                <img className={styles.nav_menu} src={icons['hamburger']} onClick={handleOpen}/>
+                <img className={styles.nav_logo} src={common['logo']}/>                
+                {
+                    open ? <img className={styles.nav_close} src={icons['close']} onClick={handleOpen}/> :
+                    <img className={styles.nav_menu} src={icons['hamburger']} onClick={handleOpen}/>
+                }  
             </nav>        
             <div className={styles.overlay} ref={overlayRef}></div>
             <menu className={styles.menu} ref={menuRef}>

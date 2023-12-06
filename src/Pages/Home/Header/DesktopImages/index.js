@@ -4,8 +4,8 @@ import seraph from './image-hero-seraph.jpg';
 import trinity from './image-hero-trinity.jpg';
 
 export default [
+    paramour,   
+    seraph,     
     federal,
-    paramour,
-    seraph,
     trinity,
 ]
