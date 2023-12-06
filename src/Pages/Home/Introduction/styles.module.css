@@ -1,6 +1,7 @@
 .container{
     display: flex;
     justify-content: end;
+    margin-bottom: 195px;
 }
 
 .intro{
@@ -94,6 +95,10 @@
 }
 
 @media(max-width: 950px){
+    .container{
+        margin-bottom: 233px;
+    }
+
     .intro{
         grid-template-columns: auto;
     }
@@ -116,6 +121,10 @@
 }
 
 @media(max-width: 600px){
+    .container{
+        margin-bottom: 113px;
+    }
+
     .intro{
         width: 90%;
         margin: auto;
