@@ -5,14 +5,18 @@ import icons from '`/icons';
 function SmallTeam() {
     return(
         <section className={styles.container}>
-            <h1>
-                Small team,<br/>
-                big ideas
-            </h1>
-            <button>
-                About Us
-                <img className={styles.arrow} src={icons['arrow']}/>
-            </button>
+            <div className={styles.overlay}></div>
+            <div className={styles.content}>
+                <h1>
+                    Small team,<br/>
+                    big ideas
+                </h1>
+                <button>
+                    About Us
+                    <img className={styles.arrow} src={icons['leftArrow']}/>
+                </button>                
+            </div>
+
         </section>
     )
 }
