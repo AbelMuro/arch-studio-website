@@ -1,6 +1,7 @@
 .footer{
-    width: 100%;
+    width: 1110px;
     height: 200px;
+    margin: auto;
     background-color: #EEEFF4;
     display: flex;
     justify-content: space-between;
@@ -66,4 +67,10 @@
     right: 0px;
     top: 0px;
     z-index: var(--farthest);
+}
+
+@media(max-width: 1440px){
+    .footer{
+        width: 100%;
+    }
 }
