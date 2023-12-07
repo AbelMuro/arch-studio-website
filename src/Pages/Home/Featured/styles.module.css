@@ -1,0 +1,235 @@
+.featured{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    column-gap: 30px; 
+    row-gap: 65px;
+    margin-bottom: 200px; 
+}
+
+.featured h1{
+    color: #1B1D23;
+    margin: 0px;
+    font-family: var(--font);
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 88.889% */
+    letter-spacing: -2px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.featured button{
+    width: 169px;
+    height: 72px;
+    background-color: #1B1D23;
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 138.889% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border: none;
+    cursor: pointer;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.featured button:hover{
+    background-color:#60636D;
+}
+
+.arrow{
+    width: 24px;
+    height: 18px;
+}
+
+.feature{
+    height: 560px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    display: flex;
+    align-items: end;
+    padding: 0px 0px 39px 40px;
+    transition: none;
+    position: relative;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: var(--farthest);
+}
+
+.feature span{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 15.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200px; /* 80% */
+    letter-spacing: -5px;
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    opacity: 0.5;
+    z-index: var(--far);
+}
+
+.feature_content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: var(--far);
+}
+
+.feature:nth-of-type(1){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.feature:nth-of-type(2){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.feature:nth-of-type(3){
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.feature_content h2{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+    margin: 0px;
+}
+
+.feature_content a{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    cursor: pointer;
+}
+
+@media(max-width: 1440px){
+    .featured{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 1100px){
+    .featured{
+        column-gap: 15px;
+    }
+
+    .feature{
+        column-gap: 15px;
+        padding-left: 0px;
+        justify-content: center;
+    }
+
+    .feature span{
+        font-size: 12.5rem;
+    }
+
+    .feature_content h2{
+        font-size: 1.5625rem;
+    }
+}
+
+@media(max-width: 900px){
+    .featured{
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+        column-gap: 0px;
+    }
+
+    .feature span{
+        font-size: 15.625rem;
+        top: 29px;
+        right: 16px;
+    }
+
+    .featured h1{
+        justify-self: start;
+    }
+
+    .featured button{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-bottom: 61px;
+    }
+
+    .feature{
+        height: 240px;
+        justify-content: start;
+        padding-left: 40px;
+    }
+
+    .feature h2{
+        font-size: 2rem;
+    }
+
+    .feature:nth-of-type(1){
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+
+    .feature:nth-of-type(2){
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .feature:nth-of-type(3){
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+}
+
+@media(max-width: 730px){
+    .featured h1{
+        font-size: 3.45rem;
+    }
+}
+
+@media(max-width: 600px){
+    .featured{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 132px;
+    }
+
+    .featured h1{
+        font-size: 3rem;
+        line-height: 52px;
+        letter-spacing: -1.714px;
+        margin-bottom: 19px;
+    }
+
+    .featured button{
+        width: 100%;
+        margin: 0px;
+        grid-row: 5/6;
+    }
+
+    .feature span{
+        display: none;
+    }   
+}

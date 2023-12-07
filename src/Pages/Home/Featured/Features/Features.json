@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Project Del Sol",
+        "url" : {
+            "desktop": "desktopDelSol",
+            "tablet": "tabletDelSol",
+            "mobile": "mobileDelSol"            
+        }
+    },
+    {
+        "title": "228B Tower",
+        "url" : {
+            "desktop": "desktop228b",
+            "tablet": "tablet228b",
+            "mobile": "mobile228b"            
+        }
+    },
+    {
+        "title": "Le Prototype",
+        "url" : {
+            "desktop": "desktopPrototype",
+            "tablet": "tabletPrototype",
+            "mobile": "mobilePrototype"            
+        }
+    }
+]

@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 import Header from './Header';
 import Introduction from './Introduction';
 import SmallTeam from './SmallTeam';
+import Featured from './Featured';
 
 function Home() {
     return(
@@ -14,6 +15,7 @@ function Home() {
             <Header/>
             <Introduction/>
             <SmallTeam/>
+            <Featured/>
         </main>
     )
 }

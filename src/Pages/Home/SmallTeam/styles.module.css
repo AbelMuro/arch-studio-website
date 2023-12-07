@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     position: relative;
     transition: width 0.2s linear;
+    margin-bottom: 205px;
 }
 
 .overlay{
@@ -76,12 +77,20 @@
 }
 
 @media(max-width: 800px){
+    .container{
+        margin-bottom: 200px;
+    }
+
     .content{
         gap: 23px;
     }
 }
 
 @media(max-width: 600px){
+    .container{
+        margin-bottom: 73px;
+    }
+
     .content{
         width: 300px
     }
