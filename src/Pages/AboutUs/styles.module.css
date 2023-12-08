@@ -36,8 +36,8 @@
     line-height: 200px; /* 80% */
     letter-spacing: -5px;
     position: absolute;
-    top: -80px;
-    left: -18px;
+    top: -85px;
+    left: -15px;
 }
 
 .about_text{
@@ -52,7 +52,7 @@
     height: 1px;
     border: none;
     background-color: #C8CCD8;
-    margin: 0px
+    margin: 0px 0px 8px 0px;
 }
 
 .about_text h2{
@@ -73,4 +73,5 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 133.333% */
+    margin: 0px;
 }
