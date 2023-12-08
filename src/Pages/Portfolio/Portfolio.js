@@ -3,7 +3,8 @@ import styles from './styles.module.css';
 import projects from './Projects';
 import images from './images';
 import useMediaQuery from '~/Hooks/useMediaQuery.js';
-
+import {motion} from 'framer-motion';
+import { fadeInVariant } from './Variants/Variants.js';
 
 function Portfolio() {
     const [mobile] = useMediaQuery('(max-width: 900px)');
@@ -20,13 +21,21 @@ function Portfolio() {
 
     return(
         <main className={styles.container}>
+            <div className={styles.label}>
+                <hr/>
+                PORTFOLIO
+            </div>
             <div className={styles.portfolio}>
                 {
                     projects.map((project, i) => {
                         const url = project.url[changeImage()];
 
                         return(
-                            <section 
+                            <motion.section 
+                                variants={fadeInVariant}
+                                initial='hidden'
+                                whileInView='show'
+                                viewport={{once: true, amount: 0.6}}
                                 key={i}
                                 className={styles.project}
                                 style={{backgroundImage: `url(${images[url]})`}}>
@@ -39,7 +48,7 @@ function Portfolio() {
                                             {project.date}  
                                         </p>                                
                                     </div>
-                            </section>
+                            </motion.section>
                         )
                     })
                 }

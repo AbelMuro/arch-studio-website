@@ -3,6 +3,30 @@
     margin-bottom: 160px
 }
 
+.label{
+    position: absolute;
+    top: 0px;
+    left: 63px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    color: #C8CCD8;
+    font-family: var(--font);
+    writing-mode: tb-rl;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 18px;
+}
+
+.label hr{
+    width: 1px;
+    height: 104px;
+    background-color: #C8CCD8;
+    border: none;
+}
+
 .portfolio{
     width: 1110px;
     display: grid;

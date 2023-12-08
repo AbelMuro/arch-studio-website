@@ -155,7 +155,7 @@
     }
 }
 
-@media(max-width: 900px){
+@media(max-width: 940px){
     .featured{
         grid-template-columns: 1fr;
         row-gap: 24px;
