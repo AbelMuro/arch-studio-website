@@ -1,4 +1,8 @@
 .home{
+    padding: 0px 165px 0px 165px;
+}
+
+.home_content{
     width: 1110px;
     margin: auto;
 }
@@ -28,19 +32,27 @@
 }
 
 @media(max-width: 1440px){
-    .home{
+    .home_content{
         width: 100%;
     }
 }
 
 
 @media(max-width: 800px){
+    .home{
+        padding: 0px 97px 0px 97px;
+    }
+
     .home_label{
         left: 38px;
     }
 }
 
 @media(max-width: 600px){
+    .home{
+        padding: 0px;
+    }
+
     .home_label{
         display: none;
     }

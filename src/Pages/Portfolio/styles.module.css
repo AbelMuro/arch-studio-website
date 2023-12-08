@@ -1,0 +1,114 @@
+.container{
+    padding: 0px 165px 0px 165px;
+    margin-bottom: 160px
+}
+
+.portfolio{
+    width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    column-gap: 30px;
+    row-gap: 32px;
+    margin: auto;
+}
+
+.project{
+    height: 560px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 39px;
+    position: relative;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: var(--farthest);
+}
+
+
+.project_content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    z-index: var(--far);
+}
+
+.project h1{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+    margin: 0px;
+    white-space: nowrap;
+
+}
+
+.project p {
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    margin: 0px;
+}
+
+@media(max-width: 1440px){
+    .portfolio{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project_content h1{
+        white-space: balance;
+    }
+}
+
+@media(max-width: 1080px){
+    .portfolio{
+        gap: 10px;
+    }
+}
+
+@media(max-width: 900px){
+    .container{
+        padding: 0px 97px 0px 97px;
+        margin-bottom: 200px
+    }
+
+    .portfolio{
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+        column-gap: 0px;
+    }
+
+    .project{
+        height: 240px;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        padding: 0px;
+        margin-bottom: 72px;
+    }
+    .portfolio{
+        width: 90%;
+    }
+    .project{
+        padding-bottom: 23px;
+    }
+
+}

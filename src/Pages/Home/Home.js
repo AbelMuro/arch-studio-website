@@ -11,11 +11,14 @@ function Home() {
             <div className={styles.home_label}>
                 <hr/>
                 HOME
-            </div>
-            <Header/>
-            <Introduction/>
-            <SmallTeam/>
-            <Featured/>
+            </div>            
+            <section className={styles.home_content}>
+                <Header/>
+                <Introduction/>
+                <SmallTeam/>
+                <Featured/>                
+            </section>
+
         </main>
     )
 }

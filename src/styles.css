@@ -19,18 +19,5 @@
 body{
     min-height: 100vh;
     margin: 0px;
-    padding: 0px 165px 0px 165px;
     position: relative;
-}
-
-@media(max-width: 800px){
-    body{
-        padding: 0px 97px 0px 97px;
-    }
-}
-
-@media(max-width: 600px){
-    body{
-        padding: 0px;
-    }
 }

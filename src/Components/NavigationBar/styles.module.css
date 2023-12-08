@@ -1,9 +1,14 @@
 .nav{
+    padding: 0px 165px 0px 165px;
+}
+
+.nav_content{
     width: 1110px;
     height: 152px;
     display: flex;
     align-items: center;
     margin: auto;
+    padding: 0px;
 }
 
 .nav_links{
@@ -39,7 +44,7 @@
 }
 
 @media(max-width: 1275px){
-    .nav{
+    .nav_content{
         width: 100%;
     }
 }
@@ -59,9 +64,21 @@
     }   
 }
 
+@media(max-width: 800px){
+    .nav{
+        padding: 0px 97px 0px 97px;
+    }
+}
+
 @media(max-width: 680px){
     .nav_links{
         width: 100%;
         gap: 10px;
+    }
+}
+
+@media(max-width: 600px){
+    .nav{
+        padding: 0px;
     }
 }

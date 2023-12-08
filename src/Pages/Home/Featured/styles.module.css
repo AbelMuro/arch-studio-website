@@ -22,6 +22,7 @@
 .featured button{
     width: 169px;
     height: 72px;
+    padding: 0px;
     background-color: #1B1D23;
     color: #FFF;
     font-family: var(--font);
@@ -212,8 +213,7 @@
 @media(max-width: 600px){
     .featured{
         width: 90%;
-        margin: auto;
-        margin-bottom: 132px;
+        margin: 0px auto 72px auto;
     }
 
     .featured h1{

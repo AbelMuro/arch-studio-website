@@ -1,0 +1,111 @@
+[
+    {
+        "title" : "Seraph Station",
+        "date": "September 2019",
+        "url" : {
+            "desktop" : "desktopSeraph",
+            "tablet": "tabletSeraph",
+            "mobile": "mobileSeraph"
+        }
+    },
+    {
+        "title" : "Eebox Building",
+        "date": "August 2017",
+        "url" : {
+            "desktop" : "desktopEebox",
+            "tablet": "tabletEebox",
+            "mobile": "mobileEebox"
+        }
+    },
+    {
+        "title" : "Federal II Tower",
+        "date": "March 2017",
+        "url" : {
+            "desktop" : "desktopFederal",
+            "tablet": "tabletFederal",
+            "mobile": "mobileFederal"
+        }
+    },
+    {
+        "title" : "Project Del Sol",
+        "date": "January 2016",
+        "url" : {
+            "desktop" : "desktopDelSol",
+            "tablet": "tabletDelSol",
+            "mobile": "mobileDelSol"
+        }
+    },
+    {
+        "title" : "Le Prototype",
+        "date": "October 2015",
+        "url" : {
+            "desktop" : "desktopPrototype",
+            "tablet": "tabletPrototype",
+            "mobile": "mobilePrototype"
+        }
+    },
+    {
+        "title" : "228b Tower",
+        "date": "April 2015",
+        "url" : {
+            "desktop" : "desktop228b",
+            "tablet": "tablet228b",
+            "mobile": "mobile228b"
+        }
+    },
+    {
+        "title" : "Grand Edelweiss Hotel",
+        "date": "December 2013",
+        "url" : {
+            "desktop" : "desktopEdelweiss",
+            "tablet": "tabletEdelweiss",
+            "mobile": "mobileEdelweiss"
+        }
+    },
+    {
+        "title" : "Netcry Tower",
+        "date": "August 2012",
+        "url" : {
+            "desktop" : "desktopNetcry",
+            "tablet": "tabletNetcry",
+            "mobile": "mobileNetcry"
+        }
+    },
+    {
+        "title" : "Hypers",
+        "date": "January 2012",
+        "url" : {
+            "desktop" : "desktopHypers",
+            "tablet": "tabletHypers",
+            "mobile": "mobileHypers"
+        }
+    },
+    {
+        "title" : "SXIV Tower",
+        "date": "March 2011",
+        "url" : {
+            "desktop" : "desktopSxiv",
+            "tablet": "tabletSxiv",
+            "mobile": "mobileSxiv"
+        }
+    },
+    {
+        "title" : "Trinity Bank Tower",
+        "date": "September 2010",
+        "url" : {
+            "desktop" : "desktopTrinity",
+            "tablet": "tabletTrinity",
+            "mobile": "mobileTrinity"
+        }
+    },
+    {
+        "title" : "Project Paramour",
+        "date": "February 2008",
+        "url" : {
+            "desktop" : "desktopParamour",
+            "tablet": "tabletParamour",
+            "mobile": "mobileParamour"
+        }
+    }
+
+]
