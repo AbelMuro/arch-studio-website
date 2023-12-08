@@ -1,0 +1,159 @@
+.about{
+    width: 1110px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.about_image{
+    width: 635px;
+    height: 720px;
+}
+
+.about_content{
+    width: 628px;
+    height: 503px;
+    padding-left: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.about_content h1{
+    color: #EEEFF4;
+    margin: 0px;
+    font-family: var(--font);
+    font-size: 15.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200px; /* 80% */
+    letter-spacing: -5px;
+    position: absolute;
+    top: -85px;
+    left: -15px;
+}
+
+.about_text{
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+}
+
+.about_text hr{
+    width: 65px;
+    height: 1px;
+    border: none;
+    background-color: #C8CCD8;
+    margin: 0px 0px 8px 0px;
+}
+
+.about_text h2{
+    color: #1B1D23;
+    font-family: var(--font);
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 88.889% */
+    letter-spacing: -2px;
+    margin: 0px;
+}
+
+.about_text p{
+    color: #60636D;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    margin: 0px;
+}
+
+@media(max-width: 1440px){
+    .about{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1045px){
+    .about_content{
+        width: 87%;
+    }
+}
+
+@media(max-width: 965px){
+    .about_image{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 880px){
+    .about_content{
+        height: 431px;
+        justify-content: start;
+    }
+    
+    .about_content h1{
+        font-size: 7.5rem;
+        letter-spacing: -2px;
+        line-height: 64px;
+        top: -18px;
+        left: initial;
+        right: 5px;
+    }
+
+    .about_text{
+        gap: 38px;
+    }
+
+    .about_text hr{
+        margin-bottom: 35px;
+    }
+
+}
+
+@media(max-width: 600px){
+
+    .about{
+        height: 520px;
+        margin-bottom: 76px;
+    }
+
+    .about_content{
+        height: auto;
+        padding: 65px 0px 0px 32px;
+        align-items: start;
+        top: 195px;
+        bottom: initial;
+        right: initial;
+        left: 0px;
+    }
+
+    .about_content h1, .about_content hr{
+        display: none;
+    }
+
+    .about_text{
+        width: 100%;
+        gap: 21px;
+    }
+
+    .about_text h2{
+        font-size: 3rem;
+        line-height: 52px; /* 108.333% */
+        letter-spacing: -1.2px;
+    }
+
+    .about_text p{
+        width: 95%;
+    }
+
+    .about_image{
+        height: 240px;    
+    }
+}
