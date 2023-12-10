@@ -1,0 +1,129 @@
+.heritage{
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0px auto 209px auto;
+}
+
+.heritage_image{
+    align-self: start;
+    width: 540px;
+    height: 568px;
+}
+
+.heritage_content{
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px
+}
+
+.heritage_content hr{
+    width: 65px;
+    height: 1px;
+    background-color: #C8CCD8;
+    border: none;
+    margin: 0px 0px 28px 0px;
+}
+
+.heritage_content h1{
+    width: 380px;
+    color: #1B1D23;
+    font-family: var(--font);
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 88.889% */
+    letter-spacing: -2px;
+    margin: 0px;
+}
+
+.heritage_content p{
+    color: #60636D;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    margin: 0px;
+}
+
+@media(max-width: 1440px){
+    .heritage{
+        width: 100%;
+    }
+
+    .heritage_content h1{
+        width: 70%;
+    }
+}
+
+@media(max-width: 1183px){
+    .heritage_image{
+        width: 50%;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 880px){
+    .heritage{
+        margin: 0px auto 231px auto;
+    }
+
+    .heritage_image{
+        display: none;
+    }
+
+    .heritage_content{
+        width: 100%;
+    }
+
+    .heritage_content hr{
+        margin-bottom: 0px;
+    }
+
+    .heritage_content h1{
+        margin-bottom: 13px;
+        color: #1B1D23;
+        font-family: var(--font);
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px; /* 88.889% */
+        letter-spacing: -2px;
+    }
+
+    .heritage_content p{
+        color: #60636D;
+        font-family: var(--font);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 133.333% */
+    }
+}
+
+@media(max-width: 600px){
+    .heritage{
+        width: 90%;
+        margin-bottom: 112px;
+    }
+
+    .heritage_content{
+        width: 100%;
+        gap: 22px;
+    }
+
+    .heritage_content hr{
+        margin-bottom: 46px;
+    }
+
+    .heritage_content h1{
+        width: 250px;
+        margin-bottom: 0px;
+        font-size: 3rem;
+        line-height: 52px; /* 108.333% */
+        letter-spacing: -1.714px;
+    }
+}

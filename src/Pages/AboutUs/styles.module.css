@@ -3,10 +3,40 @@
     margin-bottom: 159px;
 }
 
+.label{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    color: #C8CCD8;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 18px;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 63px;
+}
+
+.label hr{
+    width: 1px;
+    height: 104px;
+    border: none;
+    background-color: #C8CCD8;
+    margin: 0px;
+}
+
 @media(max-width: 800px){
     .container{
         padding: 0px 97px 0px 97px;
         margin-bottom: 239px;
+    }
+
+    .label{
+        left: 38px;
     }
 }
 
@@ -14,5 +44,9 @@
     .container{
         padding: 0px;
         margin-bottom: 111px;
+    }
+
+    .label{
+        display: none;
     }
 }

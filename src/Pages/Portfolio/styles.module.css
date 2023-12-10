@@ -121,6 +121,10 @@
     .project{
         height: 240px;
     }
+
+    .label{
+        left: 38px;
+    }    
 }
 
 @media(max-width: 600px){
@@ -133,6 +137,10 @@
     }
     .project{
         padding-bottom: 23px;
+    }
+
+    .label{
+        display: none;
     }
 
 }

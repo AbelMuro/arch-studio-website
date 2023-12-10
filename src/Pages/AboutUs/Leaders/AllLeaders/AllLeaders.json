@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Jake Richards",
+        "title": "Chief Architect",
+        "image": "jakeRichards"
+    },
+    {
+        "name": "Thompson Smith",
+        "title": "Head of Finance",
+        "image": "thompsonSmith"
+    },
+    {
+        "name": "Jackson Rourke",
+        "title": "Lead Designer",
+        "image": "jacksonRourke"
+    },
+    {
+        "name": "Maria Simpson",
+        "title": "Senior Architect",
+        "image": "mariaSimpson"
+    }
+]
