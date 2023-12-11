@@ -1,0 +1,24 @@
+#map{
+    width: 1110px;
+    height: 560px;
+    margin: 0px auto 159px auto;
+}
+
+@media(max-width: 1455px){
+    #map{
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+    #map{
+        margin-bottom: 199px;
+    }
+}
+
+@media(max-width: 600px){
+    #map{
+        height: 367px;
+        margin-bottom: 73px;
+    }
+}

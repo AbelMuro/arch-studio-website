@@ -1,0 +1,18 @@
+.connect{
+    width: 1110px;
+    margin: 0px auto 160px auto;
+    display: flex;
+    gap: 132px;
+}
+
+.connect h1{
+    width: 245px;
+    margin: 0px;
+    color: #1B1D23;
+    font-family: var(--font);
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 88.889% */
+    letter-spacing: -2px;
+}
