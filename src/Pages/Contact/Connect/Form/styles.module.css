@@ -2,5 +2,29 @@
     width: 730px;
     display: flex;
     flex-direction: column;
-    gap: 43px;
+    transition: none;
+}
+
+.submit{
+    width: 80px;
+    height: 80px;
+    border: 0px;
+    padding: 0px;
+    cursor: pointer;
+    background-color: #1B1D23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: end;
+}
+
+.submit:hover{
+    background-color: #60636D;
+}
+
+
+@media(max-width: 940px){
+    .form{
+        width: 100%;
+    }
 }

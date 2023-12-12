@@ -1,19 +1,20 @@
 .container{
-    position: relative;
-    border: none;
+    height: 92px;
+    border: 0px;
     padding: 0px;
-    margin: 0px 0px 43px 0px;
+    margin: 0px;
+    position: relative;
 }
 
-
-.input{
+.textarea{
     width: 100%;
-    height: 44px;
-    padding: 0px 0px 0px 34.49px;
+    height: 96px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
     border-bottom: 1px solid #1B1D23;
+    padding: 0px 0px 0px 34px;
+    resize: none;
     color: #1B1D23;
     font-family: var(--font);
     font-size: 1.25rem;
@@ -23,31 +24,40 @@
     letter-spacing: -0.312px;
 }
 
-
-.input:focus{
+.textarea:focus{
     outline: none;
+}
+
+.textarea:hover{
     border-bottom: 3px solid #1B1D23;
 }
 
-.input:hover{
-    border-bottom: 3px solid #1B1D23;
+.textarea::placeholder{
+    color: var(--placeholder,#C8CCD8);
+    font-family: var(--font);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.312px;
 }
 
-.input::placeholder{
-    color: var(--placeholder, #C8CCD8);
+.arrow{
+    width: 24px;
+    height: 18px;
 }
 
 .errorMessage{
     display: none;
     color: #DF5656;
+    margin: 0px;
     font-family: var(--font);
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -0.281px;
-    margin: 0px;
     position: absolute;
-    top: 11px;
     right: 16px;
+    bottom: 16px;
 }

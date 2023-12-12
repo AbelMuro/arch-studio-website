@@ -8,6 +8,10 @@ import Map from './Map';
 function Contact() {
     return(
         <main className={styles.container}>
+            <div className={styles.label}>
+                <hr/>
+                Contact
+            </div>
             <Header/>
             <ContactDetails/>
             <Map/>

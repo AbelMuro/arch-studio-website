@@ -4,6 +4,8 @@ import icons from '`/icons';
 import Features from './Features';
 import images from './images';
 import useMediaQuery from '~/Hooks/useMediaQuery.js';
+import {motion} from 'framer-motion';
+import { fadeInVariant } from './Variants/Variants.js';
 
 function Featured () {
     const [mobile] = useMediaQuery('(max-width: 600px)');
@@ -31,23 +33,28 @@ function Featured () {
                 Features.map((feature, i) => {
                     const image = feature.url[changeImage()];
                     return (
-                        <div 
+                        <motion.div 
                             className={styles.feature} 
                             key={i}
+                            initial='hidden'
+                            whileInView='show'
+                            variants={fadeInVariant}
+                            viewport={{once: true, amount: 0.6}}
+                            transition={{staggerChildren: 0.6}}
                             style={{backgroundImage: `url(${images[image]})`}}>
                                 <div className={styles.overlay}></div>
-                                <span>
+                                <motion.span variants={fadeInVariant}>
                                     {i + 1}
-                                </span>
+                                </motion.span>
                                 <div className={styles.feature_content}>
-                                    <h2>
+                                    <motion.h2 variants={fadeInVariant}>
                                         {feature.title}
-                                    </h2>
-                                    <a>
+                                    </motion.h2>
+                                    <motion.a variants={fadeInVariant}>
                                         View All Projects
-                                    </a>                                
+                                    </motion.a>                                
                                 </div>
-                        </div>
+                        </motion.div>
                     )
                 })
             }

@@ -2,14 +2,47 @@
     padding: 0px 165px 0px 165px;
 }
 
+.label{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    color: #C8CCD8;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 18px;
+    position: absolute;
+    top: 0px;
+    left: 63px;
+}
+
+.label hr{
+    border: none;
+    width: 1px;
+    height: 104px;
+    background-color: #C8CCD8;
+}
+
 @media(max-width: 800px){
     .container{
         padding: 0px 97px 0px 97px
+    }
+
+    .label{
+        left: 38px;
     }
 }
 
 @media(max-width: 600px){
     .container{
         padding: 0px;
+    }
+
+    .label{
+        display: none;
     }
 }

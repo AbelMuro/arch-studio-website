@@ -51,7 +51,7 @@ function MobileNavigationBar() {
                     <img className={styles.nav_menu} src={icons['hamburger']} onClick={handleOpen}/>
                 }  
             </nav>        
-            <div className={styles.overlay} ref={overlayRef}></div>
+            <div className={styles.overlay} ref={overlayRef} onClick={handleOpen}></div>
             <menu className={styles.menu} ref={menuRef}>
                 <ul className={styles.menu_links} onClick={handleLink}>
                     <li data-link='/portfolio'>

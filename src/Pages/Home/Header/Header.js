@@ -19,7 +19,7 @@ function ImageCarousel() {
     const handleImage = (e) => {
         if(!e.target.matches('button')) return;
 
-        const newSlide = e.target.getAttribute('data-slide');
+        const newSlide = Number(e.target.getAttribute('data-slide'));
         if(newSlide === slide)
             return;
 
@@ -54,8 +54,9 @@ function ImageCarousel() {
         if(mobile){
             interval.current = setInterval(() => {
                 setSlide((prev) => {
-                    if(prev[0] < 3)
-                        return [prev[0] + 1, 1]
+                    let prevSlide = prev[0]
+                    if(prevSlide < 3)
+                        return [prevSlide + 1, 1];               
                     else    
                         return [0, -1];
                     });
@@ -72,7 +73,7 @@ function ImageCarousel() {
                 <AnimatePresence initial={false} custom={direction}>            
                 {  
                     slides.map((currSlide) => {
-                        if(currSlide.id != slide) return;
+                        if(currSlide.id == slide)
                             return(
                                     <motion.section 
                                         key={slide}

@@ -16,3 +16,48 @@
     line-height: 64px; /* 88.889% */
     letter-spacing: -2px;
 }
+
+@media(max-width: 1440px){
+    .connect{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1100px){
+    .connect{
+        gap: 70px;
+    }
+
+    .connect h1{
+        font-size: 4rem;
+        line-height: 54px;
+    }
+}
+
+@media(max-width: 940px){
+    .connect{
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 200px;
+    }
+    .connect h1{
+        width: 100%;
+        font-size: 4.5rem;
+        line-height: 64px;
+    }
+}
+
+@media(max-width: 600px){
+    .connect{
+        width: 90%;
+        gap: 42px;
+        margin-bottom: 72px;
+    }
+
+    .connect h1{
+        width: 165px;
+        font-size: 3rem;
+        line-height: 52px;
+        letter-spacing: -1.714px;
+    }
+}

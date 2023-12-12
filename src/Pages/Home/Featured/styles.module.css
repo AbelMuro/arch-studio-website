@@ -73,7 +73,7 @@
 }
 
 .feature span{
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.5);
     font-family: var(--font);
     font-size: 15.625rem;
     font-style: normal;
@@ -120,7 +120,7 @@
 }
 
 .feature_content a{
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.75);
     font-family: var(--font);
     font-size: 1.125rem;
     font-style: normal;
